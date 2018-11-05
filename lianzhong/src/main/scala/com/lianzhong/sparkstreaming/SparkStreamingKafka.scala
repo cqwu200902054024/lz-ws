@@ -19,7 +19,7 @@ object SparkStreamingKafka {
   }
 
   def setUpSparkStreamingContext(topics: Set[String],kafkaParams: Map[String,String],checkpointDir: String)(): StreamingContext = {
-    val sparkConf = new SparkConf().setAppName(this.getClass.getSimpleName)//.setMaster("local[2]")
+    val sparkConf = new SparkConf().setAppName(this.getClass.getSimpleName).setMaster("local[2]")
     // val sc = new SparkContext(sparkConf)
     val ssc = new StreamingContext(sparkConf,Seconds(5))
     val message = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topics)
