@@ -7,5 +7,11 @@
         <parameter value="D:\ws\lianzhong\target/.scala_dependencies" />
       </parameters>
     </profile>
+    <profile name="Maven 2" modules="spark-streaming">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ws\lianzhong\spark-streaming\target/.scala_dependencies" />
+      </parameters>
+    </profile>
   </component>
 </project>
