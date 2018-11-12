@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hive-udf" />
+        <module name="map-reduce" />
+        <module name="spark" />
         <module name="spark-streaming" />
       </profile>
     </annotationProcessing>

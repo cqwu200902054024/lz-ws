@@ -8,6 +8,8 @@
         <module>spark-streaming</module>
         <module>hive-udf</module>
       <module>spark-streaming</module>
+      <module>map-reduce</module>
+      <module>spark</module>
     </modules>
     <name>${project.artifactId}</name>
   <description>My wonderfull scala app</description>

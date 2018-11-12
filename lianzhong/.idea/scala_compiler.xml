@@ -19,5 +19,17 @@
         <parameter value="D:\ws\lianzhong\hive-udf\target/.scala_dependencies" />
       </parameters>
     </profile>
+    <profile name="Maven 4" modules="map-reduce">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ws\lianzhong\map-reduce\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 5" modules="spark">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ws\lianzhong\spark\target/.scala_dependencies" />
+      </parameters>
+    </profile>
   </component>
 </project>
