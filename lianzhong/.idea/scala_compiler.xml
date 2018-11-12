@@ -13,5 +13,11 @@
         <parameter value="D:\ws\lianzhong\spark-streaming\target/.scala_dependencies" />
       </parameters>
     </profile>
+    <profile name="Maven 3" modules="hive-udf">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ws\lianzhong\hive-udf\target/.scala_dependencies" />
+      </parameters>
+    </profile>
   </component>
 </project>

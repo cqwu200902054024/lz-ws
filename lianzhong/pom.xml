@@ -6,6 +6,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spark-streaming</module>
+        <module>hive-udf</module>
+      <module>spark-streaming</module>
     </modules>
     <name>${project.artifactId}</name>
   <description>My wonderfull scala app</description>
@@ -34,7 +36,7 @@
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_2.11</artifactId>
       <version>2.2.0</version>
-      <scope>provided</scope>
+     <!-- <scope>provided</scope>-->
     </dependency>
 
     <!-- Spark Steaming -->
@@ -42,7 +44,7 @@
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-streaming_2.11</artifactId>
       <version>2.2.0</version>
-      <scope>provided</scope>
+     <!-- <scope>provided</scope>-->
     </dependency>
 
     <!-- Spark streaming-kafka -->
@@ -50,7 +52,7 @@
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-streaming-kafka_2.11</artifactId>
       <version>1.6.0</version>
-      <scope>provided</scope>
+    <!--  <scope>provided</scope>-->
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
