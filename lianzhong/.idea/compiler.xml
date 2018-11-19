@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hive-udf" />
-        <module name="map-reduce" />
         <module name="spark" />
         <module name="spark-streaming" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hive-udf" target="1.7" />
+      <module name="map-reduce" target="1.7" />
       <module name="spark-streaming" target="1.8" />
     </bytecodeTargetLevel>
   </component>
