@@ -1,4 +1,4 @@
-package com.lianzhong;
+package net.lianzhong;
 
 import static org.junit.Assert.assertTrue;
 
