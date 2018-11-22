@@ -40,6 +40,7 @@ object SparkStreamingKafka {
       rdd.foreachPartition{data =>
         val connection = C3p0Utils.getConnection
         connection.setAutoCommit(false)
+        //从数据库中获取数据
         val sql = "insert into test (name,age) values(?,?)"
         val preparedStatement = connection.prepareStatement(sql)
         data.foreach{d =>
