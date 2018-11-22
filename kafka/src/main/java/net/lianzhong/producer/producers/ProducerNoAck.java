@@ -30,7 +30,8 @@ public class ProducerNoAck {
         // ProducerRecord<String, String> record = new ProducerRecord<>("dev3-yangyunhe-topic001", "key", line);
             ProducerRecord<String, String> record = new ProducerRecord<>("dev3-yangyunhe-topic001", line);
            // 只管发送消息，不管是否发送成功
-            producer.send(record); Thread.sleep(100);
+            producer.send(record);
+            Thread.sleep(100);
         }
         producer.close();
     }
